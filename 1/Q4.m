@@ -22,4 +22,4 @@ title('abs')
 
 subplot(2,2,4)
 plot(t,an)
-title('ngle')
+title('angle')
