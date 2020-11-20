@@ -21,5 +21,5 @@ plot(t,a)
 title('abs')
 
 subplot(2,2,4)
-plot(t,r)
+plot(t,an)
 title('ngle')
