@@ -1,0 +1,12 @@
+Z1=str2sym( '(z^2+z+1)/(z^2+z-2)' );
+x1=iztrans(Z1);
+x1=simplify(x1)
+Z2=str2sym( '1+1/z+1/(z^2)+1/(z^3)+1/(z^4)' );
+x2=iztrans(Z2);
+x2=simplify(x2)
+Z3=str2sym( '2*(z^2+3*z+6)/(z^4)' );
+x3=iztrans(Z3);
+x3=simplify(x3)
+Z4=str2sym( 'z*(z^2+z+1)/((z+1)*(z-2)*(z+3))' );
+x4=iztrans(Z4);
+x4=simplify(x4)

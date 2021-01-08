@@ -1,0 +1,17 @@
+clear all;
+t1=0;
+t2=4;
+T=t2-t1;
+delta_t=0.03;
+N=T/delta_t;
+t=0:0.03:4;
+f=(cos(2*pi*t)).*(heaviside(t)-heaviside(t-4));
+w1=-2*pi;
+w2=2*pi;
+W=w2-w1;
+delta_w=w2-w1;
+K=W/delta_w;
+w=-3*pi:0.01:3*pi;
+F=(T/N)*f*exp(-j*t'*w);
+f1=abs(F);
+plot(w,f1);
